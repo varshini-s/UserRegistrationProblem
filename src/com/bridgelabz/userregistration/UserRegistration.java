@@ -10,9 +10,11 @@ public class UserRegistration
 	static String firstNamePattern="^[A-Z][a-z]{2,}";
 	static String lastNamePattern="^[A-Z][a-z]{2,}";
 	static String mailIdPattern="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[.][a-z]{2,4}([.][a-z]{2,4}){0,1}$";
+	static String phoneNumberPattern="^[0-9]{2}[ ][0-9]{10}$";
 
 
-	String firstName,lastName,mailId;
+
+	String firstName,lastName,mailId,phoneNumber;
 
 	public  void validation(String fieldToValidate)
 	{
@@ -32,6 +34,10 @@ public class UserRegistration
 			patternToCompile=mailIdPattern;
 			break;
 
+		case "phoneNumber":
+
+			patternToCompile=phoneNumberPattern;
+			break;
 
 		}
 
@@ -65,6 +71,10 @@ public class UserRegistration
 		case "mailID":
 
 			mailId=validString;
+			break;
+		case "phoneNumber":
+
+			phoneNumber=validString;
 			break;
 
 
