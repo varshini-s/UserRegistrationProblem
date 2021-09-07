@@ -56,6 +56,7 @@ public class UserRegistration
 				break;
 			}
 
+			scanner.close();
 
 		}
 
