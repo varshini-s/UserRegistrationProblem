@@ -11,7 +11,7 @@ public class UserRegistration
 	static String lastNamePattern="^[A-Z][a-z]{2,}";
 	static String mailIdPattern="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[.][a-z]{2,4}([.][a-z]{2,4}){0,1}$";
 	static String phoneNumberPattern="^[0-9]{2}[ ][0-9]{10}$";
-	static String passWordPattern="^(?=.*[A-Z])(?=.{8,}$)$";
+	static String passWordPattern="^(?=.*[0-9])(?=.*[A-Z])(?=.{8,}$)$";
 
 
 
