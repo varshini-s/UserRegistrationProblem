@@ -8,9 +8,10 @@ public class UserRegistration
 {
 
 	static String firstNamePattern="^[A-Z][a-z]{2,}";
-	
-	String firstName;
-	
+	static String lastNamePattern="^[A-Z][a-z]{2,}";
+
+	String firstName,lastName;
+
 	public  void validation(String fieldToValidate)
 	{
 		String patternToCompile="";
@@ -20,8 +21,12 @@ public class UserRegistration
 		case "firstName":
 			patternToCompile=firstNamePattern;
 			break;
+		case "lastName":
 
-		
+			patternToCompile=lastNamePattern;
+			break;
+
+
 
 		}
 
@@ -48,17 +53,21 @@ public class UserRegistration
 		case "firstName":
 			firstName=validString;
 			break;
+		case "lastName":
 
-		
+			lastName=validString;
+			break;
+
+
 
 		}
 
 	}
-	
+
 	public static void main(String[] args) 
-	
+
 	{
-		
+
 		System.out.println("welcome to user Registration problem");
 	}
 }
