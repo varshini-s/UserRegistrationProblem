@@ -12,7 +12,7 @@ public class UserRegistration
 	static String mailIdPattern="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[.][a-z]{2,4}([.][a-z]{2,4}){0,1}$";
 	static String phoneNumberPattern="^[0-9]{2}[ ][0-9]{10}$";
 	static String passWordPattern="^(?=.*[0-9])(?=.*[A-Z])(?=.{8,}$)[0-9a-zA-Z]*[@#$%][0-9a-zA-Z]*$";
-					
+
 
 
 
@@ -93,6 +93,19 @@ public class UserRegistration
 
 
 		}
+
+		
+
+	}
+	
+	public   void printValidValues()
+	{
+
+		System.out.println("FirstName: "+firstName);
+		System.out.println("LastName: "+lastName);
+		System.out.println("mail id: "+mailId);
+		System.out.println("PhoneNumber: "+phoneNumber);
+		System.out.println("Password : "+password);
 
 	}
 
