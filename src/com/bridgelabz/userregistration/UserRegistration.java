@@ -108,6 +108,18 @@ public class UserRegistration
 		System.out.println("Password : "+password);
 
 	}
+	
+	public  void clearValues()
+	{
+
+		firstName="";
+		lastName="";
+		mailId="";
+		phoneNumber="";
+		password="";
+
+
+	}
 
 	public static void main(String[] args) 
 
